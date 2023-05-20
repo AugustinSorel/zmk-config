@@ -1,3 +1,5 @@
 # TODO
 
-- [ ] f11
+- [ ] f11 shorcut
+- [ ] print key
+- [ ] play / pause
