@@ -16,9 +16,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp K_APPLICATION>
+                = <&macro_press &kp LGUI>
                 , <&macro_tap &kp PAGE_DOWN>
-                , <&macro_release &kp K_APPLICATION>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -28,9 +28,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp K_APPLICATION>
+                = <&macro_press &kp LGUI>
                 , <&macro_tap &kp PAGE_UP>
-                , <&macro_release &kp K_APPLICATION>
+                , <&macro_release &kp LGUI>
                 ;
         };
     };
