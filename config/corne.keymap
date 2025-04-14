@@ -44,6 +44,17 @@
                 ;
         };
 
+        c_cedilla: c_cedilla {
+            label = "c_cedilla";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RALT>
+                , <&macro_tap &kp COMMA>
+                , <&macro_tap &kp C>
+                ;
+        };
+
         workspace_left: workspace_left {
             label = "workspace_left";
             compatible = "zmk,behavior-macro";
