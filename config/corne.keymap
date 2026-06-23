@@ -45,27 +45,6 @@
                 , <&macro_tap &kp C>
                 ;
         };
-
-        ws_left: workspace_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp PAGE_UP>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-
-
-        ws_right: workspace_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp PAGE_DOWN>
-                , <&macro_release &kp LGUI>
-                ;
-        };
     };
 
 
@@ -92,7 +71,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LCTRL     &bt BT_SEL 0  &bt BT_SEL 1  &trans        &trans        &trans            &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &mkp MB4      &mkp MB5 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LGUI      &kp F11       &trans        &kp PSCRN     &kp C_PP      &kp K_NEXT        &trans        &ws_left      &ws_right     &trans        &trans        &trans
+     &kp LGUI      &kp F11       &trans        &kp PSCRN     &kp C_PP      &kp K_NEXT        &trans        &trans        &trans         &trans        &trans        &trans
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &kp LSHFT     &trans        &kp SPACE         &kp RET       &trans        &kp ESC
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
